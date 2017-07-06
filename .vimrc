@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
 " Navigation
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
 
 " Airline
 Plug 'bling/vim-airline'
