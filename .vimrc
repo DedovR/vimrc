@@ -1,16 +1,19 @@
+" Global settings
 set number
 set expandtab
 set tabstop=2
 set nocompatible
+set backspace=indent,eol,start
 syntax on
 
-" Specify a directory for plugins
-" - For Neovim: ~/.local/share/nvim/plugged
-" - Avoid using standard Vim directory names like 'plugin'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Plugins
 call plug#begin('~/.vim/plugged')
 
-" On-demand loading
+" Navigation
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'kien/ctrlp.vim'
 
 " Airline
 Plug 'bling/vim-airline'
@@ -19,10 +22,17 @@ Plug 'vim-airline/vim-airline-themes'
 " Ruby/Rails
 Plug 'tpope/vim-rails'
 
-Plug 'Valloric/YouCompleteMe'
+" Lang
+Plug 'jiangmiao/auto-pairs'
+
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Initialize plugin system
 call plug#end()
 
-" mapping
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Mapping
 map <C-n> :NERDTreeToggle<CR>
