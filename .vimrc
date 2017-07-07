@@ -14,6 +14,9 @@ call plug#begin('~/.vim/plugged')
 " Navigation
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'haya14busa/incsearch.vim'
+Plug 'rking/ag.vim'
 
 " Airline
 Plug 'bling/vim-airline'
@@ -36,3 +39,8 @@ call plug#end()
 
 " Mapping
 map <C-n> :NERDTreeToggle<CR>
+
+" Incremental search
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
