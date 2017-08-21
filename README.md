@@ -11,3 +11,5 @@ Russian language support:
     $ cmake ..
     $ make
     $ sudo make install
+
+Install fonts for airline there https://github.com/powerline/fonts. Then select required font in terminal settings.
